@@ -1,0 +1,15 @@
+:root
+{
+	/* COLORS  ------------------*/
+		--gradient-min: hsl(6, 100%, 80%) to hsl(335, 100%, 65%);
+		--pale_blue: hsl(243, 100%, 93%);
+		--grayish_blue: hsl(229, 7%, 55%);
+		--dark_blue: hsl(228, 56%, 26%);
+		--very_dark_blue: hsl(229, 57%, 11%);
+
+	/* FONT ------------------*/
+
+		--general_size : 14px;
+		--big_size : 16px;
+		--giant_size : 24px;
+}
