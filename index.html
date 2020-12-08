@@ -14,12 +14,40 @@
 </head>
 <body>
 
-  You’ve used 815 GB of your storage
+  <header class="site_identity site_identity--layout">
+    <div class="site_identity__logo site_identity__logo--layout">
+      <img src="./images/logo.svg" alt="Site logo, three square + FYLO"/>
+    </div>
+    <div class="site_identity__toolskit site_identity__toolskit--layout">
+      <div class="toolskit__document toolskit__document--layout">
+        <img src="./images/icon-document.svg">
+      </div>
+      <div class="toolskit__folder toolskit__folder--layout">
+        <img src="./images/icon-folder.svg">
+      </div>
+      <div class="toolskit__upload toolskit__upload--layout">
+        <img src="./images/icon-upload.svg">
+      </div>
+    </div>
+  </header>
 
-  185 GB Left
-  
-  0 GB
-  1000 GB
+  <div class="storage_block storage_block--layout">
+    <p class="storage_used storage_used--layout">  You’ve used 815 GB of your storage </p>
+    <div class="storage__capacity_bar storage__capacity_bar--layout"></div>
+    <div class="storage__min_max storage__min_max--layout">
+      <div class="min_max__min min_max__min--layout">0 GB</div>
+      <div class="min_max__max min_max__max--layout">1000 GB</div>
+    </div>
+  </div>
+
+  <aside class="storage_left storage_left--layout" >
+    <p class="storage_left__value storage_left__value--layout">
+      <div class="value__first_digit value__first_digit--layout ">1</div>
+      <div class="value__second_digit value__second_digit--layout ">8</div>
+      <div class="value__third_digit value__third_digit--layout ">5</div>
+      GB Left
+    </p>
+  </aside>
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
