@@ -5,6 +5,20 @@
 
 	:root
 	{
+		/* GRID ------------------------*/
+			--page_grid_columns : 18.05% 24.31% 2.08% 37.5% 18.06%;
+			--page_grid_rows: 36.25% 12.5em 38.75%;
+
+			--site_identity_column_start: 2;
+			--site_identity_column_end: 3;
+			--site_identity_row_start: 2;
+			--site_identity_row_end: 3; 
+
+			--storage_block_column_start: 4;
+			--storage_block_column_end: 5;
+			--storage_block_row_start: 2;
+			--storage_block_row_end: 3;
+
 		/* SIZE ------------------------*/
 			--identity_max_width: 21.75em;
 			--identity_min_width: 13.21em;
@@ -46,8 +60,8 @@
 
 		/* BACKGROUND ------------------------*/
 			--page_background_image : url(../images/bg-desktop.png);
-			--page_background_size : 102vw;
-			--page_background_position : left top 53vh;
+			--page_background_size : 117vw;
+			--page_background_position : left bottom;
 
 
 		/* MARGIN ------------------------*/
@@ -64,13 +78,13 @@
 			--digit_margin_right: 0.31em;
 
 		/* PADDING ------------------------*/
-			--identity_padding : 2.93em 1.57% 2.86em 4.08%;
+			--identity_padding : 2.93em 1.57% 2.86em 11.43%;
 
 			--toolskit_padding_top: auto;
 			--toolskit_padding_bottom: auto;
 			--toolskit_padding_left: 1em;
 
-			--storage_padding : 2.93em 3% 2.86em 4.08%;
+			--storage_padding : 2.93em 7.41% 2.86em 7.41%;
 		
 		/* BORDER ------------------------*/
 			--identity_border_radius: 9px 91px 9px 9px;

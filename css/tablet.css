@@ -1,37 +1,37 @@
-/* DESKTOP PARAMETERS ------------------------*/
+/* TABLET PARAMETERS ------------------------*/
 
-@media screen and (max-width: 425px)
+@media screen and (min-width: 426px) and (max-width: 769px)
 {
 
 	:root
 	{
 		/* GRID ------------------------*/
-			--page_grid_columns : auto 86.67% auto;
-			--page_grid_rows: 18.89% 12.5em 1em 10em auto;
+			--page_grid_columns : 2.05% 24fr 2.08% 38fr 2.06%;
+			--page_grid_rows: 36.25% 12.5em 38.75%;
 
 			--site_identity_column_start: 2;
 			--site_identity_column_end: 3;
 			--site_identity_row_start: 2;
 			--site_identity_row_end: 3; 
 
-			--storage_block_column_start: 2;
-			--storage_block_column_end: 3;
-			--storage_block_row_start: 4;
-			--storage_block_row_end: 5;
+			--storage_block_column_start: 4;
+			--storage_block_column_end: 5;
+			--storage_block_row_start: 2;
+			--storage_block_row_end: 3;
 
 		/* SIZE ------------------------*/
-			--identity_max_width: 23.02em;
-			--identity_min_width: 16.67em;
+			--identity_max_width: 21.75em;
+			--identity_min_width: 13.21em;
+			--identity_width: 20%;
+			--identity_height: 8.47em;
 
-			--identity_height: 7em;
+			--site_identity_logo_width: 9.71em;
 
-			--site_identity_logo_width: 8.5em;
+			--site_identity_toolskit_width: 3.57em;
+			--site_identity_toolskit_height: 3.57em;
 
-			--site_identity_toolskit_width: 3em;
-			--site_identity_toolskit_height: 3em;
-
-			--toolskit_width: 3em;
-			--toolskit_height: 3em;
+			--toolskit_width: 3.57em;
+			--toolskit_height: 3.57em;
 
 			--toolskit_document_width: 41.67%;
 			--toolskit_document_height: 50%;
@@ -43,15 +43,15 @@
 			--toolskit_upload_height: 33.33%;
 
 
-			--storage_max_width: 23.02em;
-			--storage_min_width: 16.67em;
+			--storage_max_width: 38.57em;
+			--storage_min_width: 16.57em;
+			--storage_width: 34.45%;
+			--storage_height: 5.21em;
 
-			--storage_height: 5.6em;
+			--storage_left_width: 179px;
+			--storage_left_height: 72px;
 
-			--storage_left_width: 55.38%;
-			--storage_left_height: 4.14em;
-
-			--appendix_height : 0px;
+			--appendix_height : 1.5em;
 
 
 		/* FONT ------------------------*/
@@ -59,18 +59,18 @@
 
 
 		/* BACKGROUND ------------------------*/
-			--page_background_image : url(../images/bg-mobile.png);
-			--page_background_size : 100vh;
-			--page_background_position : left top;
+			--page_background_image : url(../images/bg-desktop.png);
+			--page_background_size : 117vw;
+			--page_background_position : left bottom;
 
 
 		/* MARGIN ------------------------*/
-			--identity_margin : 33.6% 0 0 3.67%;
+			--identity_margin : 19.89% 0 0 18.02%;
 
 			--toolskit_margin_top: 2.21em;			
 			--toolskit_margin_right: 1.14em;
 
-			--storage_margin : 2.27% 0 0 3.67%;
+			--storage_margin : 23.5% 0 0 2.08%;
 
 			--progress_bar_margin_top: 1.14em;
 			--min_max_margin_top: 0.71em;
@@ -78,13 +78,13 @@
 			--digit_margin_right: 0.31em;
 
 		/* PADDING ------------------------*/
-			--identity_padding : 2.5em 1.57% 2.86em 8.08%;
+			--identity_padding : 2.93em 1.57% 2.86em 11.43%;
 
 			--toolskit_padding_top: auto;
 			--toolskit_padding_bottom: auto;
 			--toolskit_padding_left: 1em;
 
-			--storage_padding : 2em 3% 2.86em 4.08%;
+			--storage_padding : 2.93em 7.41% 2.86em 7.41%;
 		
 		/* BORDER ------------------------*/
 			--identity_border_radius: 9px 91px 9px 9px;
@@ -94,13 +94,13 @@
 			--storage_border_radius: 8px;
 
 		/* POSITION ------------------------*/
-			--storage_position_top: 4.5em;
-			--storage_position_right: 21.54%;
+			--storage_position_top: -8.13em;
+			--storage_position_right: 0px;
 
-			--appendix_bottom : 0em;
+			--appendix_bottom : -1.5em;
 
 		/*  FLEXBOX ------------------------*/
-			--page_flex_direction : column;
+			--page_flex_direction : row;
 
 			--toolskit_align_items : flex-start;
 
