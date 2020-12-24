@@ -1,6 +1,11 @@
 
     .attribution 
     { 
+    	position: absolute;
+    	bottom: 0;
+    	width: 100vw;
+    	right: auto;
+    	left: auto;
     	font-size: 11px; 
     	text-align: center; 
     }

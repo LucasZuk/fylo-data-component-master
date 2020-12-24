@@ -6,20 +6,102 @@
 	:root
 	{
 		/* SIZE ------------------------*/
+			--identity_max_width: 21.75em;
+			--identity_min_width: 13.21em;
+			--identity_width: 20%;
+			--identity_height: 8.47em;
+
+			--site_identity_logo_width: 9.71em;
+
+			--site_identity_toolskit_width: 3.57em;
+			--site_identity_toolskit_height: 3.57em;
+
+			--toolskit_width: 3.57em;
+			--toolskit_height: 3.57em;
+
+			--toolskit_document_width: 41.67%;
+			--toolskit_document_height: 50%;
+
+			--toolskit_folder_width: 50%;
+			--toolskit_folder_height: 41.67%;
+
+			--toolskit_upload_width: 50%;
+			--toolskit_upload_height: 33.33%;
+
+
+			--storage_max_width: 38.57em;
+			--storage_min_width: 16.57em;
+			--storage_width: 34.45%;
+			--storage_height: 5.21em;
+
+			--storage_left_width: 179px;
+			--storage_left_height: 72px;
+
+			--appendix_height : 1.5em;
+
 
 		/* FONT ------------------------*/
+			--font_weight_bold : 700;
+
 
 		/* BACKGROUND ------------------------*/
+			--page_background_image : url(../images/bg-desktop.png);
+			--page_background_size : 102vw;
+			--page_background_position : left top 53vh;
+
 
 		/* MARGIN ------------------------*/
+			--identity_margin : 19.89% 0 0 18.02%;
+
+			--toolskit_margin_top: 2.21em;			
+			--toolskit_margin_right: 1.14em;
+
+			--storage_margin : 23.5% 0 0 2.08%;
+
+			--progress_bar_margin_top: 1.14em;
+			--min_max_margin_top: 0.71em;
+
+			--digit_margin_right: 0.31em;
 
 		/* PADDING ------------------------*/
+			--identity_padding : 2.93em 1.57% 2.86em 4.08%;
+
+			--toolskit_padding_top: auto;
+			--toolskit_padding_bottom: auto;
+			--toolskit_padding_left: 1em;
+
+			--storage_padding : 2.93em 3% 2.86em 4.08%;
 		
 		/* BORDER ------------------------*/
+			--identity_border_radius: 9px 91px 9px 9px;
+
+			--toolskit_border_radius : 8px;
+
+			--storage_border_radius: 8px;
 
 		/* POSITION ------------------------*/
+			--storage_position_top: -8.13em;
+			--storage_position_right: 0px;
+
+			--appendix_bottom : -1.5em;
 
 		/*  FLEXBOX ------------------------*/
+			--page_flex_direction : row;
 
+			--toolskit_align_items : flex-start;
+
+			--storage_left_flex_direction: row;
+			--storage_left_justify_content: center;
+		/* PROGRESS BAR ------------------------*/
+			--progress_bar_max : 32.86em;
+			--progress_bar_min : 16.57em;
+			--progress_bar_width: 100%;
+			--progress_bar_height: 1.43em;
+			--progress_bar_value_height: 75%;
+
+			--progress_bar_value : 71.5%;
+
+			--progress_bar_value_circle_width: 0.71em;
+			--progress_bar_value_circle_height: 0.71em;
 	}
 }

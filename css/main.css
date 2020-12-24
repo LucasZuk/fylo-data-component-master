@@ -9,9 +9,330 @@
 
 	/* FONT ------------------*/
 
+		--small_size : 12px;
 		--general_size : 14px;
 		--big_size : 16px;
-		--giant_size : 24px;
+		--giant_size : 40px;
+		font-family: 'Raleway', sans-serif;
 }
+
+/* MA0  ------------------*/
+p
+{
+	margin: 0;
+	padding: 0;
+}
+
+/* PAGE  ------------------*/
+
+.page
+{
+/*display: flex;
+flex-direction: var(--page_flex_direction);*/
+
+display: grid;
+grid-template-columns: 18.05% auto 2.08% auto 18.06%;
+grid-template-rows: 36.25% 12.5em 38.75%;
+
+justify-items: stretch;
+}
+
+.page--layout
+{
+	height: 100vh;
+	width: 100vw;
+
+	background-image: var(--page_background_image);
+	background-size: var(--page_background_size);
+	background-color: var(--very_dark_blue);
+	background-repeat: no-repeat;
+	background-position: var(--page_background_position);
+}
+
+	/* SITE IDENTITY  ------------------*/
+
+		.site_identity
+		{
+			grid-column-start: 2;
+			grid-column-end: 3;
+			grid-row-start: 2;
+			grid-row-end: 3; 
+		}
+
+		.site_identity--layout
+		{
+			max-width: var(--identity_max_width); 
+			min-width: var(--identity_min_width); 
+			width: var(--identity_width);
+			height: var(--identity_height);
+
+			background-color: var(--dark_blue);
+			border-radius: var(--identity_border_radius);
+
+			margin: var(--identity_margin);
+			padding: var(--identity_padding); 
+		}
+
+		/* LOGO ------------------*/
+
+		.site_identity__logo--layout
+		{
+			width: var(--site_identity_logo_width);
+			margin: 0;
+		}
+
+
+		/* TOOLSKIT  ------------------*/
+
+			.site_identity__toolskit
+			{
+				display: flex;
+				align-items: var(--toolskit_align_items);
+
+			}
+
+			.site_identity__toolskit--layout
+			{
+				
+			}
+
+			.toolskit
+			{
+				display: flex;
+				justify-content: center;
+				align-items: center;
+
+			}
+
+			.toolskit--layout
+			{
+				width: var(--toolskit_width);
+				height: var(--toolskit_height);
+
+				background-color: var(--very_dark_blue);
+
+				border-radius: var(--toolskit_border_radius);
+
+				margin-top: var(--toolskit_margin_top);
+				margin-right: var(--toolskit_margin_right);
+
+			}
+
+			/* DOCUMENT ------------------*/
+
+				.toolskit__document
+				{
+					
+				}
+
+				.toolskit__document--layout
+				{
+					width: var(--toolskit_document_width);
+					height: var(--toolskit_document_height);
+				}
+
+			/* FOLDER ------------------*/
+
+				.toolskit__folder
+				{
+					
+				}
+
+				.toolskit__folder--layout
+				{
+					width: var(--toolskit_folder_width);
+					height: var(--toolskit_folder_height);
+				}
+
+			/* UPLOAD ------------------*/
+
+				.toolskit__upload
+				{
+					
+				}
+
+				.toolskit__upload--layout
+				{
+					width: var(--toolskit_upload_width);
+					height: var(--toolskit_upload_height);
+				}
+
+	/* STORAGE BLOCK  ------------------*/
+
+		.storage_block
+		{
+			grid-column-start: 4;
+			grid-column-end: 5;
+			grid-row-start: 2;
+			grid-row-end: 3; 
+
+		}
+
+		.storage_block--layout
+		{
+			max-width: var(--storage_max_width); 
+			min-width: var(--storage_min_width); 
+			width: var(--storage_width);
+			height: var(--storage_height);
+
+			background-color: var(--dark_blue);
+			border-radius: var(--storage_border_radius);
+
+			margin: var(--storage_margin);
+			padding: var(--storage_padding); 
+		}
+
+			/* STORAGE USED  ------------------*/
+			
+				.storage_used
+				{
+				} 
+
+				.storage_used--layout
+				{
+					color: var(--pale_blue);
+					size: var(--general_size);
+				}
+
+				.storage_used__value
+				{
+				}
+
+				.storage_used__value--layout
+				{
+					font-weight: 700;
+				}
+
+			/* PROGRESS BAR  ------------------*/
+				.storage__progress_bar
+				{
+					position: relative;
+				}
+
+				.storage__progress_bar--layout
+				{
+					max-width: var(--progress_bar_max);
+					min-width: var(--progress_bar_min);
+					width: var(--progress_bar_width);
+					height: var(--progress_bar_height);
+
+					background-color: var(--very_dark_blue);
+ 				 	border-radius: 10px;
+				}
+
+				.progress_bar__value
+				{
+					display: flex;
+					justify-content: flex-end;
+					align-items: center;
+				}
+
+				.progress_bar__value--layout
+				{
+					width : var(--progress_bar_value);
+					height: var(--progress_bar_value_height);
+
+					background: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+					border-radius: 10px;
+					border:solid;
+					border-color: var(--very_dark_blue_transparent);
+
+					margin-top: var(--progress_bar_margin_top);
+				}
+
+				.circle
+				{
+					width : var(--progress_bar_value_circle_width);
+					height: var(--progress_bar_value_circle_height);
+
+					background-color: white;
+					border-radius: 10px;
+
+					margin-right: 2px;
+				}
+
+			/* MIN / MAX  ------------------*/
+
+
+				.storage__min_max
+				{
+					display: flex;
+					justify-content: space-between;
+				}
+
+				.storage__min_max--layout
+				{
+					color: var(--pale_blue);
+					font-weight: var(--font_weight_bold);
+
+					margin-top: var(--min_max_margin_top);
+				}
+
+		/* STORAGE LEFT  ------------------*/
+
+			.storage_left
+			{
+				position: absolute;
+				right: var(--storage_position_right);
+				top: var(--storage_position_top);
+
+				display: flex;
+				flex-direction: var(--storage_left_flex_direction);
+				justify-content: var(--storage_left_justify_content);
+				align-items: center;
+			}
+
+			.storage_left--layout
+			{
+				background-color: white;
+
+				width: var(--storage_left_width);
+				height: var(--storage_left_height);
+
+				border-radius: 10px;
+			}
+
+			.storage_left--layout::after
+			{
+				position: absolute;
+				bottom: var(--appendix_bottom);
+				right: 0px;
+				content: '';
+				width:1px;
+				height: var(--appendix_height);
+				border:1px solid white;
+				border-color:transparent white transparent transparent;
+				border-width: var(--appendix_height);
+			}
+
+
+			.storage_left__value--layout
+			{
+				font-size: var(--small_size);
+				font-weight: 700;
+				color: var(--grayish_blue);
+
+/*				margin-bottom: 10px;
+*/			}
+
+			/* DIGITS  ------------------*/
+		
+				.value__digit--layout
+				{
+					font-weight: 700;
+					font-size: var(--giant_size);
+					color: var(--very_dark_blue);
+
+					margin-right: var(--digits_margin_right);
+					align-self: center;
+				}
+
+
+
+
+
+
+
+
 
 

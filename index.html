@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" type="text/css" href="./css/main.css">
   <link rel="stylesheet" type="text/css" media ="screen and (min-width : 376px)" href="./css/desktop.css">
@@ -12,46 +14,45 @@
 
   <title>Frontend Mentor | Fylo data storage component</title>
 </head>
-<body>
+<body class="page page--layout ">
 
   <header class="site_identity site_identity--layout">
     <div class="site_identity__logo site_identity__logo--layout">
-      <img src="./images/logo.svg" alt="Site logo, three square + FYLO"/>
+      <img src="./images/logo.svg" alt="Site logo, three square + FYLO" class="site_identity__logo--layout" />
     </div>
     <div class="site_identity__toolskit site_identity__toolskit--layout">
-      <div class="toolskit__document toolskit__document--layout">
-        <img src="./images/icon-document.svg">
+      <div class="toolskit toolskit--layout">
+        <img src="./images/icon-document.svg" class="toolskit__document toolskit__document--layout">
       </div>
-      <div class="toolskit__folder toolskit__folder--layout">
-        <img src="./images/icon-folder.svg">
+      <div class=" toolskit toolskit--layout">
+        <img src="./images/icon-folder.svg" class="toolskit__folder toolskit__folder--layout">
       </div>
-      <div class="toolskit__upload toolskit__upload--layout">
-        <img src="./images/icon-upload.svg">
+      <div class="toolskit toolskit--layout">
+        <img src="./images/icon-upload.svg" class="toolskit__upload toolskit__upload--layout">
       </div>
     </div>
   </header>
 
   <div class="storage_block storage_block--layout">
-    <p class="storage_used storage_used--layout">  You’ve used 815 GB of your storage </p>
-    <div class="storage__capacity_bar storage__capacity_bar--layout"></div>
+    <p class="storage_used storage_used--layout">  You’ve used <span class="storage_used__value storage_used__value--layout">815 GB</span> of your storage </p>
+    <div class="storage__progress_bar storage__progress_bar--layout">
+      <div class="progress_bar__value progress_bar__value--layout"><div class="circle"></div></div>
+
+        <aside class="storage_left storage_left--layout" >
+            <p class="value__digit value__digit--layout ">185</p> 
+            <p class="storage_left__value storage_left__value--layout">GB LEFT</p>
+        </aside>
+    </div>
     <div class="storage__min_max storage__min_max--layout">
       <div class="min_max__min min_max__min--layout">0 GB</div>
       <div class="min_max__max min_max__max--layout">1000 GB</div>
     </div>
   </div>
 
-  <aside class="storage_left storage_left--layout" >
-    <p class="storage_left__value storage_left__value--layout">
-      <div class="value__first_digit value__first_digit--layout ">1</div>
-      <div class="value__second_digit value__second_digit--layout ">8</div>
-      <div class="value__third_digit value__third_digit--layout ">5</div>
-      GB Left
-    </p>
-  </aside>
   
-  <div class="attribution">
+  <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
-  </div>
+  </footer>
 </body>
 </html>
